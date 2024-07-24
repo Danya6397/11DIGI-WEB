@@ -1,3 +1,255 @@
-h1 {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: "Playwrite GB S", cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+      
+    
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 10px
+}
+
+nav.sticky {
+    background-color: #bdc7dc;
+}
+
+nav .nav_content {
+    height: 100%;
+    max-width: 1220px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav_content .logo a {
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+}
+
+.nav_content .nav_links {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav_links li {
+    list-style: none;
+    margin: 0 8px;
+    padding: 0 6px;
+}
+
+
+nav .nav_links a {
+    font-size: 15px;
+    font-weight: 500;
+    color:  rgb(13, 55, 24);
+    padding: 10px 15px;
+    border: 2px solid rgb(217, 217, 70);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav .nav_links a:hover {
+    background-color: rgb(217, 217, 70);
+    color: rgb(13, 55, 24);
+}
+
+
+video {
+    width: 100%;
+}
+
+.quote p {
+    padding-top: 60px;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+}
+
+
+/**/
+
+
+
+
+/*Start of the trial scroll*/
+
+.scroll_reveal {
+    margin-top: 200px;
+}
+
+
+section .see {
+    max-height: 350px;
+    max-width: 900px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll_reveal .see:nth-child(1) {
+    display: inline-block;
+    justify-content: center;
+
+}
+
+.scroll_reveal .see:nth-child(2) {
+    padding: 50px;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+    margin: 100px auto;
+    
+}
+
+.scroll_reveal .see:nth-child(3) {
+    padding: 50px;
+    color: #240d34;
+    background-color: aliceblue;
+    margin: 100px auto;
+}
+
+.scroll_reveal .see:nth-child(4) {
+    padding: 50px;
+    color: #240d34;
+    background-color: aliceblue;
+    
+    margin: 100px auto;
+}
+
+.see {
+    margin-bottom: 200px;
+}
+
+section .container {
+    margin: 100px;
+    
+}
+
+
+.see h2 {
     font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.see .cards {
+    display: flex;
+    max-width: 900px;
+
+}
+
+.see .cards .text-card {
+    background-color: rgb(131, 139, 185);
+    padding: 10px;
+    margin: 20px;
+    
+    
+}
+
+
+@media (max-width: 900px){
+    .scroll_reveal h1 {
+        font-size: 40px;
+    }
+
+    .see .cards {
+        flex-direction: column;
+    }
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/*End of scroll reveal*/
+
+.about {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.about h1 {
+    font-size: 30px;
+}
+
+.about .blurb p {
+    max-width: 300px;
+    font-size: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 15px;
+    
+}
+
+.about .blurb {
+    display: flex;
+    margin: auto;
+    max-width: 630px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+}
+
+.about .blurb img {
+    width: 300px;
+    padding-right: 15px;
+}
+
+/*Begin Footer*/
+
+.footer {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+
+}
+
+.footer img {
+    width: 150px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.footer a {
+    background-color: rgb(209, 198, 37);
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    margin: 20px;
+    border: solid rgb(209, 198, 37);
+
+    
+}
+
+.footer a:hover {
+    background-color: white;
+    border: solid rgb(209, 198, 37) 2px;
+}
+.footer p {
+    padding: 30px;
+    font-size: 18px;
+
 }
