@@ -86,7 +86,7 @@ video {
 /*Start of the trial scroll*/
 
 .scroll_reveal {
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 
@@ -97,6 +97,7 @@ section .see {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: aliceblue;
 }
 
 .scroll_reveal .see:nth-child(1) {
@@ -156,7 +157,10 @@ section .container {
     padding: 10px;
     margin: 20px;
     
-    
+}
+
+.container-reveal {
+    background-color: aliceblue;
 }
 
 
@@ -191,7 +195,8 @@ section .container {
 }
 
 .about h1 {
-    font-size: 30px;
+    font-size: 25px;
+    text-transform: uppercase;
 }
 
 .about .blurb p {
@@ -215,6 +220,7 @@ section .container {
 .about .blurb img {
     width: 300px;
     padding-right: 15px;
+    border-radius: 20px;
 }
 
 /*Begin Footer*/
@@ -233,7 +239,7 @@ section .container {
 }
 
 .footer a {
-    background-color: rgb(209, 198, 37);
+    background-color: white;
     padding: 5px 15px;
     text-decoration: none;
     font-size: 15px;
@@ -245,7 +251,7 @@ section .container {
 }
 
 .footer a:hover {
-    background-color: white;
+    background-color: rgb(209, 198, 37);
     border: solid rgb(209, 198, 37) 2px;
 }
 .footer p {
@@ -253,3 +259,165 @@ section .container {
     font-size: 18px;
 
 }
+
+/*Start of Slideshow*/
+
+.slideshow-container {
+    box-sizing: border-box;
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    padding-top: 200px;
+    
+
+}
+
+
+
+.slideshow-container img {
+    vertical-align: middle;
+    margin: auto;
+    max-width: 500px;
+    min-width: 500px;
+    height: 230px;
+    border-radius: 30px;
+
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    width: auto;
+    padding: 16px;
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(000, 000, 000, 0.8);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    text-align: center;
+}
+
+.slideshow-navigation {
+    text-align: center;
+}
+
+.slideshow-navigation .active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+   from {opacity: .4;}
+   to {opacity:1}
+}
+
+/**/
+.around {
+    margin: 100px 0 120px 0;
+    max-height: 400px;
+    background-color: #bdc7dc;
+    padding: auto;
+}
+
+.around-display {
+    justify-content: center;
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    text-align: center;
+
+
+}
+
+.polaroid img  {
+    max-width: 200px;
+    padding: 20px;
+    padding-bottom: 10px;
+    max-height: 400px;
+    margin: auto;
+    background-color: white;
+   
+
+}
+
+.polaroid  {
+    margin: 40px 20px 20px 20px;
+    background-color: white;
+    
+}
+
+.polaroid p {
+    padding-bottom: 20px;
+}
+
+/*Beginning of Gallery*/
+
+.gallery {
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 50px;
+    margin: auto;
+}
+
+table td img {
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+tr td {
+    padding: 10px;
+}
+
+table {
+    justify-content: center;
+    max-width: 575px;
+    margin: auto;
+}
+
+.gallery h1 {
+    padding-bottom: 50px;
+}
+
+
