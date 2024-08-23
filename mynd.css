@@ -73,7 +73,7 @@ video {
     padding-top: 60px;
     font-size: 40px;
     text-align: center;
-    font-family: "Playfair Display", serif;
+    font-family: "Edu VIC WA NT Beginner", cursive;
     font-weight: 600;
 }
 
@@ -153,15 +153,22 @@ section .container {
 }
 
 .see .cards .text-card {
-    background-color: rgb(131, 139, 185);
+    
     padding: 10px;
     margin: 20px;
     
 }
 
 
+.text-card img {
+    width: 170px;
+    min-height: 170px;
+    border-radius: 5px;
+}
+
 .text-card img:hover {
     transform: scale(1.1);
+    transition: 2s;
     
     
 }
@@ -204,6 +211,7 @@ section .container {
 .about_home h1 {
     font-size: 25px;
     text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 .about_home .blurb p {
@@ -227,8 +235,15 @@ section .container {
 .about_home .blurb img {
     width: 300px;
     padding-right: 15px;
-    border-radius: 20px;
+    
 }
+
+.about_home img:hover {
+    transform: scale(1.03);
+    transition: 2s;
+}
+
+
 
 /*Begin Footer*/
 
@@ -383,8 +398,12 @@ section .container {
     max-height: 400px;
     margin: auto;
     background-color: white;
-   
 
+}
+
+.polaroid:hover {
+    transform: scale(1.07);
+    transition: 2s;
 }
 
 .polaroid  {
@@ -440,7 +459,8 @@ table {
     padding: 180px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 40px;
+    font-family: "DM Serif Text", serif;
     color: white;
     margin: 90px 0;
 }
@@ -464,6 +484,7 @@ table {
 /*Beginning of individual locations page*/
 h4 {
     font-size: 40px;
+    font-family: "DM Serif Text", serif;
     text-align: center;
     padding-top: 150px;
 
@@ -477,6 +498,15 @@ h4 {
     padding-bottom: 300px;
     min-height: 1900px;
 }
+
+.location {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 75px;
+    padding-bottom: 300px;
+    min-height: 1000px;
+}
+
 
 .loca_content {
     align-content: center;
@@ -502,18 +532,19 @@ h4 {
 
 .loca_right p {
     text-align: right;
-    
     padding: 20px 10px 40px 0;
 }
 
 .loca_left h2 {
     font-size: 30px;
+    font-family: "Josefin Sans", sans-serif;
     padding: 10px;
     text-align: left;
 }
 
 .loca_right h2 {
     font-size: 30px;
+    font-family: "Josefin Sans", sans-serif;
     padding: 10px;
     text-align: right;
 }
