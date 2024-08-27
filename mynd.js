@@ -8,6 +8,8 @@ window.addEventListener("scroll",function(){
     }
 })
 
+/*code credit: 'Five-Star Tutorials' on Youtube*/
+
 
 window.addEventListener('scroll', reveal)
 
@@ -28,6 +30,7 @@ function reveal(){
     }
 }
 
+/*code credit: 'Coding Show' on Youtube */
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -55,3 +58,5 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+/*code credit: 'w3schools' */

@@ -3,11 +3,10 @@
     margin: 0;
     box-sizing: border-box; 
     font-family: "Playwrite GB S", cursive;
+    
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
-
-      
+ /*used for navigation bar on all pages*/
     
 nav {
     position: fixed;
@@ -48,7 +47,6 @@ nav .nav_links li {
     padding: 0 6px;
 }
 
-
 nav .nav_links a {
     font-size: 15px;
     font-weight: 500;
@@ -64,6 +62,7 @@ nav .nav_links a:hover {
     color: rgb(13, 55, 24);
 }
 
+/*credit to navigation bar code: 'Five-Star Tutorials' on Youtube*/
 
 video {
     width: 100%;
@@ -78,12 +77,8 @@ video {
 }
 
 
-/**/
 
-
-
-
-/*Start of the trial scroll*/
+/*start of the scroll reveal*/
 
 .scroll_reveal {
     margin-top: 100px;
@@ -143,20 +138,16 @@ section .container {
     font-size: 20px;
     text-align: center;
     text-transform: uppercase;
-
 }
 
 .see .cards {
     display: flex;
     max-width: 900px;
-
 }
 
 .see .cards .text-card {
-    
     padding: 10px;
     margin: 20px;
-    
 }
 
 
@@ -169,8 +160,6 @@ section .container {
 .text-card img:hover {
     transform: scale(1.1);
     transition: 2s;
-    
-    
 }
 
 .container-reveal {
@@ -179,9 +168,7 @@ section .container {
 
 
 @media (max-width: 900px){
-    .scroll_reveal h1 {
-        font-size: 40px;
-    }
+    
 
     .see .cards {
         flex-direction: column;
@@ -200,7 +187,8 @@ section .container {
     opacity: 1;
 }
 
-/*End of scroll reveal*/
+/*end of scroll reveal*/
+/*credit for scroll reveal: 'Coding Show" on Youtube*/
 
 .about_home {
     justify-content: center;
@@ -243,9 +231,9 @@ section .container {
     transition: 2s;
 }
 
+/*end of home page*/
 
-
-/*Begin Footer*/
+/*begin footer- code used on all pages*/
 
 .footer {
     justify-content: center;
@@ -268,8 +256,6 @@ section .container {
     color: black;
     margin: 20px;
     border: solid rgb(209, 198, 37);
-
-    
 }
 
 .footer a:hover {
@@ -279,10 +265,9 @@ section .container {
 .footer p {
     padding: 30px;
     font-size: 18px;
-
 }
 
-/*Start of Slideshow*/
+/*start of slideshow on destinations page*/
 
 .slideshow-container {
     box-sizing: border-box;
@@ -290,8 +275,6 @@ section .container {
     position: relative;
     margin: auto;
     padding-top: 200px;
-    
-
 }
 
 
@@ -303,7 +286,6 @@ section .container {
     min-width: 500px;
     height: 230px;
     border-radius: 30px;
-
 }
 
 .mySlides {
@@ -323,7 +305,6 @@ section .container {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-
 }
 
 .next {
@@ -373,12 +354,14 @@ section .container {
    to {opacity:1}
 }
 
-/**/
+/*credit for slideshow code: 'w3schools'*/
+
+
 .around {
     margin: 100px 0 120px 0;
     max-height: 400px;
     background-color: #bdc7dc;
-    padding: auto;
+    
 }
 
 .around-display {
@@ -419,7 +402,7 @@ section .container {
     font-weight: bold;
 }
 
-/*Beginning of Gallery*/
+
 
 .gallery {
     align-items: center;
@@ -450,7 +433,8 @@ table {
 }
 
 
-/*End of destinations page*/
+/*end of destinations page*/
+/*beginning of about page*/
 
 .about h1 {
     background-image: url(Images/IMG_48581.png);
@@ -481,7 +465,7 @@ table {
     font-size: 20px;
 }
 
-/*Beginning of individual locations page*/
+/*beginning of individual locations page- code used for both community and track locations*/
 h4 {
     font-size: 40px;
     font-family: "DM Serif Text", serif;
